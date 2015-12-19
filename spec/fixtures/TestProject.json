@@ -1,0 +1,548 @@
+{
+  "classes": {},
+  "objectVersion": "46",
+  "archiveVersion": "1",
+  "objects": {
+    "DACE56AC1C24A14D00E6ABB0": {
+      "path": "Info.plist",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "text.plist.xml",
+      "sourceTree": "<group>"
+    },
+    "DACE56B91C24A14D00E6ABB0": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "CLANG_WARN_ENUM_CONVERSION": "YES",
+        "GCC_WARN_UNUSED_VARIABLE": "YES",
+        "VALIDATE_PRODUCT": "YES",
+        "GCC_WARN_ABOUT_RETURN_TYPE": "YES_ERROR",
+        "CLANG_ENABLE_MODULES": "YES",
+        "CLANG_CXX_LANGUAGE_STANDARD": "gnu++0x",
+        "GCC_NO_COMMON_BLOCKS": "YES",
+        "GCC_WARN_UNINITIALIZED_AUTOS": "YES_AGGRESSIVE",
+        "CLANG_WARN_INT_CONVERSION": "YES",
+        "MTL_ENABLE_DEBUG_INFO": "NO",
+        "CLANG_WARN_CONSTANT_CONVERSION": "YES",
+        "DEBUG_INFORMATION_FORMAT": "dwarf-with-dsym",
+        "GCC_C_LANGUAGE_STANDARD": "gnu99",
+        "CLANG_WARN__DUPLICATE_METHOD_MATCH": "YES",
+        "CLANG_WARN_EMPTY_BODY": "YES",
+        "GCC_WARN_64_TO_32_BIT_CONVERSION": "YES",
+        "TARGETED_DEVICE_FAMILY": "1,2",
+        "ALWAYS_SEARCH_USER_PATHS": "NO",
+        "COPY_PHASE_STRIP": "NO",
+        "CLANG_ENABLE_OBJC_ARC": "YES",
+        "CLANG_WARN_BOOL_CONVERSION": "YES",
+        "CLANG_WARN_DIRECT_OBJC_ISA_USAGE": "YES_ERROR",
+        "GCC_WARN_UNUSED_FUNCTION": "YES",
+        "CLANG_WARN_OBJC_ROOT_CLASS": "YES_ERROR",
+        "CODE_SIGN_IDENTITY[sdk=iphoneos*]": "iPhone Developer",
+        "ENABLE_NS_ASSERTIONS": "NO",
+        "IPHONEOS_DEPLOYMENT_TARGET": "9.1",
+        "SDKROOT": "iphoneos",
+        "CLANG_CXX_LIBRARY": "libc++",
+        "ENABLE_STRICT_OBJC_MSGSEND": "YES",
+        "CLANG_WARN_UNREACHABLE_CODE": "YES",
+        "GCC_WARN_UNDECLARED_SELECTOR": "YES"
+      },
+      "name": "Release"
+    },
+    "DACE56BC1C24A14D00E6ABB0": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "INFOPLIST_FILE": "TestProject\/Info.plist",
+        "PRODUCT_BUNDLE_IDENTIFIER": "com.paul-samuels.TestProject",
+        "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
+        "LD_RUNPATH_SEARCH_PATHS": "$(inherited) @executable_path\/Frameworks",
+        "PRODUCT_NAME": "$(TARGET_NAME)"
+      },
+      "name": "Release"
+    },
+    "DACE568D1C24A14C00E6ABB0": {
+      "isa": "XCConfigurationList",
+      "defaultConfigurationIsVisible": "0",
+      "defaultConfigurationName": "Release",
+      "buildConfigurations": [
+        "DACE56B81C24A14D00E6ABB0",
+        "DACE56B91C24A14D00E6ABB0"
+      ]
+    },
+    "DACE56931C24A14D00E6ABB0": {
+      "isa": "PBXGroup",
+      "name": "Products",
+      "children": [
+        "DACE56921C24A14D00E6ABB0",
+        "DACE56A61C24A14D00E6ABB0",
+        "DACE56B11C24A14D00E6ABB0"
+      ],
+      "sourceTree": "<group>"
+    },
+    "DACE56A61C24A14D00E6ABB0": {
+      "path": "TestProjectTests.xctest",
+      "isa": "PBXFileReference",
+      "includeInIndex": "0",
+      "explicitFileType": "wrapper.cfbundle",
+      "sourceTree": "BUILT_PRODUCTS_DIR"
+    },
+    "DACE568A1C24A14C00E6ABB0": {
+      "buildConfigurationList": "DACE568D1C24A14C00E6ABB0",
+      "targets": [
+        "DACE56911C24A14D00E6ABB0",
+        "DACE56A51C24A14D00E6ABB0",
+        "DACE56B01C24A14D00E6ABB0"
+      ],
+      "developmentRegion": "English",
+      "knownRegions": [
+        "en",
+        "Base"
+      ],
+      "isa": "PBXProject",
+      "compatibilityVersion": "Xcode 3.2",
+      "productRefGroup": "DACE56931C24A14D00E6ABB0",
+      "projectDirPath": "",
+      "attributes": {
+        "LastSwiftUpdateCheck": "0710",
+        "LastUpgradeCheck": "0710",
+        "ORGANIZATIONNAME": "Paul Samuels",
+        "TargetAttributes": {
+          "DACE56B01C24A14D00E6ABB0": {
+            "TestTargetID": "DACE56911C24A14D00E6ABB0",
+            "CreatedOnToolsVersion": "7.1.1"
+          },
+          "DACE56911C24A14D00E6ABB0": {
+            "CreatedOnToolsVersion": "7.1.1"
+          },
+          "DACE56A51C24A14D00E6ABB0": {
+            "TestTargetID": "DACE56911C24A14D00E6ABB0",
+            "CreatedOnToolsVersion": "7.1.1"
+          }
+        }
+      },
+      "hasScannedForEncodings": "0",
+      "projectRoot": "",
+      "mainGroup": "DACE56891C24A14C00E6ABB0"
+    },
+    "DACE56B61C24A14D00E6ABB0": {
+      "isa": "PBXBuildFile",
+      "fileRef": "DACE56B51C24A14D00E6ABB0"
+    },
+    "DACE569D1C24A14D00E6ABB0": {
+      "isa": "PBXBuildFile",
+      "fileRef": "DACE569C1C24A14D00E6ABB0"
+    },
+    "DACE56901C24A14D00E6ABB0": {
+      "isa": "PBXResourcesBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "DACE56A01C24A14D00E6ABB0",
+        "DACE569D1C24A14D00E6ABB0",
+        "DACE569B1C24A14D00E6ABB0"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "DACE56A31C24A14D00E6ABB0": {
+      "isa": "PBXFrameworksBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "DACE56B31C24A14D00E6ABB0": {
+      "isa": "PBXTargetDependency",
+      "target": "DACE56911C24A14D00E6ABB0",
+      "targetProxy": "DACE56B21C24A14D00E6ABB0"
+    },
+    "DACE569A1C24A14D00E6ABB0": {
+      "path": "Base.lproj\/Main.storyboard",
+      "isa": "PBXFileReference",
+      "name": "Base",
+      "lastKnownFileType": "file.storyboard",
+      "sourceTree": "<group>"
+    },
+    "DACE56971C24A14D00E6ABB0": {
+      "path": "ViewController.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    },
+    "DACE56AD1C24A14D00E6ABB0": {
+      "isa": "PBXSourcesBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "DACE56B61C24A14D00E6ABB0"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "DACE56A01C24A14D00E6ABB0": {
+      "isa": "PBXBuildFile",
+      "fileRef": "DACE569E1C24A14D00E6ABB0"
+    },
+    "DACE56BD1C24A14D00E6ABB0": {
+      "isa": "XCConfigurationList",
+      "buildConfigurations": [
+        "DACE56BE1C24A14D00E6ABB0",
+        "DACE56BF1C24A14D00E6ABB0"
+      ],
+      "defaultConfigurationIsVisible": "0"
+    },
+    "DACE56B01C24A14D00E6ABB0": {
+      "buildConfigurationList": "DACE56C01C24A14D00E6ABB0",
+      "productReference": "DACE56B11C24A14D00E6ABB0",
+      "productType": "com.apple.product-type.bundle.ui-testing",
+      "productName": "TestProjectUITests",
+      "isa": "PBXNativeTarget",
+      "buildPhases": [
+        "DACE56AD1C24A14D00E6ABB0",
+        "DACE56AE1C24A14D00E6ABB0",
+        "DACE56AF1C24A14D00E6ABB0"
+      ],
+      "dependencies": [
+        "DACE56B31C24A14D00E6ABB0"
+      ],
+      "name": "TestProjectUITests",
+      "buildRules": []
+    },
+    "DACE56C01C24A14D00E6ABB0": {
+      "isa": "XCConfigurationList",
+      "buildConfigurations": [
+        "DACE56C11C24A14D00E6ABB0",
+        "DACE56C21C24A14D00E6ABB0"
+      ],
+      "defaultConfigurationIsVisible": "0"
+    },
+    "DACE56941C24A14D00E6ABB0": {
+      "path": "TestProject",
+      "isa": "PBXGroup",
+      "children": [
+        "DACE56951C24A14D00E6ABB0",
+        "DACE56971C24A14D00E6ABB0",
+        "DACE56991C24A14D00E6ABB0",
+        "DACE569C1C24A14D00E6ABB0",
+        "DACE569E1C24A14D00E6ABB0",
+        "DACE56A11C24A14D00E6ABB0"
+      ],
+      "sourceTree": "<group>"
+    },
+    "DACE56A71C24A14D00E6ABB0": {
+      "isa": "PBXContainerItemProxy",
+      "containerPortal": "DACE568A1C24A14C00E6ABB0",
+      "remoteGlobalIDString": "DACE56911C24A14D00E6ABB0",
+      "remoteInfo": "TestProject",
+      "proxyType": "1"
+    },
+    "DACE56AA1C24A14D00E6ABB0": {
+      "path": "TestProjectTests.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    },
+    "DACE56B71C24A14D00E6ABB0": {
+      "path": "Info.plist",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "text.plist.xml",
+      "sourceTree": "<group>"
+    },
+    "DACE56BA1C24A14D00E6ABB0": {
+      "isa": "XCConfigurationList",
+      "buildConfigurations": [
+        "DACE56BB1C24A14D00E6ABB0",
+        "DACE56BC1C24A14D00E6ABB0"
+      ],
+      "defaultConfigurationIsVisible": "0"
+    },
+    "DACE568E1C24A14D00E6ABB0": {
+      "isa": "PBXSourcesBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "DACE56981C24A14D00E6ABB0",
+        "DACE56961C24A14D00E6ABB0"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "DACE569E1C24A14D00E6ABB0": {
+      "isa": "PBXVariantGroup",
+      "name": "LaunchScreen.storyboard",
+      "children": [
+        "DACE569F1C24A14D00E6ABB0"
+      ],
+      "sourceTree": "<group>"
+    },
+    "DACE56911C24A14D00E6ABB0": {
+      "buildConfigurationList": "DACE56BA1C24A14D00E6ABB0",
+      "productReference": "DACE56921C24A14D00E6ABB0",
+      "productType": "com.apple.product-type.application",
+      "productName": "TestProject",
+      "isa": "PBXNativeTarget",
+      "buildPhases": [
+        "DACE568E1C24A14D00E6ABB0",
+        "DACE568F1C24A14D00E6ABB0",
+        "DACE56901C24A14D00E6ABB0"
+      ],
+      "dependencies": [],
+      "name": "TestProject",
+      "buildRules": []
+    },
+    "DACE56A41C24A14D00E6ABB0": {
+      "isa": "PBXResourcesBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "DACE56B41C24A14D00E6ABB0": {
+      "path": "TestProjectUITests",
+      "isa": "PBXGroup",
+      "children": [
+        "DACE56B51C24A14D00E6ABB0",
+        "DACE56B71C24A14D00E6ABB0"
+      ],
+      "sourceTree": "<group>"
+    },
+    "DACE569B1C24A14D00E6ABB0": {
+      "isa": "PBXBuildFile",
+      "fileRef": "DACE56991C24A14D00E6ABB0"
+    },
+    "DACE56981C24A14D00E6ABB0": {
+      "isa": "PBXBuildFile",
+      "fileRef": "DACE56971C24A14D00E6ABB0"
+    },
+    "DACE56AE1C24A14D00E6ABB0": {
+      "isa": "PBXFrameworksBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "DACE56A11C24A14D00E6ABB0": {
+      "path": "Info.plist",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "text.plist.xml",
+      "sourceTree": "<group>"
+    },
+    "DACE56BE1C24A14D00E6ABB0": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "INFOPLIST_FILE": "TestProjectTests\/Info.plist",
+        "BUNDLE_LOADER": "$(TEST_HOST)",
+        "TEST_HOST": "$(BUILT_PRODUCTS_DIR)\/TestProject.app\/TestProject",
+        "PRODUCT_BUNDLE_IDENTIFIER": "com.paul-samuels.TestProjectTests",
+        "LD_RUNPATH_SEARCH_PATHS": "$(inherited) @executable_path\/Frameworks @loader_path\/Frameworks",
+        "PRODUCT_NAME": "$(TARGET_NAME)"
+      },
+      "name": "Debug"
+    },
+    "DACE56B11C24A14D00E6ABB0": {
+      "path": "TestProjectUITests.xctest",
+      "isa": "PBXFileReference",
+      "includeInIndex": "0",
+      "explicitFileType": "wrapper.cfbundle",
+      "sourceTree": "BUILT_PRODUCTS_DIR"
+    },
+    "DACE56C11C24A14D00E6ABB0": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "INFOPLIST_FILE": "TestProjectUITests\/Info.plist",
+        "TEST_TARGET_NAME": "TestProject",
+        "PRODUCT_BUNDLE_IDENTIFIER": "com.paul-samuels.TestProjectUITests",
+        "LD_RUNPATH_SEARCH_PATHS": "$(inherited) @executable_path\/Frameworks @loader_path\/Frameworks",
+        "USES_XCTRUNNER": "YES",
+        "PRODUCT_NAME": "$(TARGET_NAME)"
+      },
+      "name": "Debug"
+    },
+    "DACE56951C24A14D00E6ABB0": {
+      "path": "AppDelegate.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    },
+    "DACE56AB1C24A14D00E6ABB0": {
+      "isa": "PBXBuildFile",
+      "fileRef": "DACE56AA1C24A14D00E6ABB0"
+    },
+    "DACE56A81C24A14D00E6ABB0": {
+      "isa": "PBXTargetDependency",
+      "target": "DACE56911C24A14D00E6ABB0",
+      "targetProxy": "DACE56A71C24A14D00E6ABB0"
+    },
+    "DACE56BB1C24A14D00E6ABB0": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "INFOPLIST_FILE": "TestProject\/Info.plist",
+        "PRODUCT_BUNDLE_IDENTIFIER": "com.paul-samuels.TestProject",
+        "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
+        "LD_RUNPATH_SEARCH_PATHS": "$(inherited) @executable_path\/Frameworks",
+        "PRODUCT_NAME": "$(TARGET_NAME)"
+      },
+      "name": "Debug"
+    },
+    "DACE56B81C24A14D00E6ABB0": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "GCC_WARN_UNDECLARED_SELECTOR": "YES",
+        "CLANG_ENABLE_OBJC_ARC": "YES",
+        "CLANG_WARN_DIRECT_OBJC_ISA_USAGE": "YES_ERROR",
+        "CLANG_WARN__DUPLICATE_METHOD_MATCH": "YES",
+        "CODE_SIGN_IDENTITY[sdk=iphoneos*]": "iPhone Developer",
+        "SDKROOT": "iphoneos",
+        "CLANG_CXX_LANGUAGE_STANDARD": "gnu++0x",
+        "ENABLE_TESTABILITY": "YES",
+        "CLANG_WARN_BOOL_CONVERSION": "YES",
+        "CLANG_WARN_UNREACHABLE_CODE": "YES",
+        "ENABLE_STRICT_OBJC_MSGSEND": "YES",
+        "GCC_PREPROCESSOR_DEFINITIONS": [
+          "DEBUG=1",
+          "$(inherited)"
+        ],
+        "CLANG_WARN_ENUM_CONVERSION": "YES",
+        "GCC_WARN_64_TO_32_BIT_CONVERSION": "YES",
+        "GCC_WARN_UNINITIALIZED_AUTOS": "YES_AGGRESSIVE",
+        "CLANG_WARN_EMPTY_BODY": "YES",
+        "GCC_WARN_ABOUT_RETURN_TYPE": "YES_ERROR",
+        "GCC_DYNAMIC_NO_PIC": "NO",
+        "GCC_WARN_UNUSED_VARIABLE": "YES",
+        "GCC_C_LANGUAGE_STANDARD": "gnu99",
+        "CLANG_ENABLE_MODULES": "YES",
+        "GCC_NO_COMMON_BLOCKS": "YES",
+        "CLANG_WARN_INT_CONVERSION": "YES",
+        "MTL_ENABLE_DEBUG_INFO": "YES",
+        "ALWAYS_SEARCH_USER_PATHS": "NO",
+        "CLANG_WARN_OBJC_ROOT_CLASS": "YES_ERROR",
+        "GCC_OPTIMIZATION_LEVEL": "0",
+        "CLANG_WARN_CONSTANT_CONVERSION": "YES",
+        "COPY_PHASE_STRIP": "NO",
+        "SWIFT_OPTIMIZATION_LEVEL": "-Onone",
+        "TARGETED_DEVICE_FAMILY": "1,2",
+        "ONLY_ACTIVE_ARCH": "YES",
+        "GCC_WARN_UNUSED_FUNCTION": "YES",
+        "DEBUG_INFORMATION_FORMAT": "dwarf",
+        "IPHONEOS_DEPLOYMENT_TARGET": "9.1",
+        "CLANG_CXX_LIBRARY": "libc++"
+      },
+      "name": "Debug"
+    },
+    "DACE56891C24A14C00E6ABB0": {
+      "isa": "PBXGroup",
+      "sourceTree": "<group>",
+      "children": [
+        "DACE56941C24A14D00E6ABB0",
+        "DACE56A91C24A14D00E6ABB0",
+        "DACE56B41C24A14D00E6ABB0",
+        "DACE56931C24A14D00E6ABB0"
+      ]
+    },
+    "DACE568F1C24A14D00E6ABB0": {
+      "isa": "PBXFrameworksBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "DACE569F1C24A14D00E6ABB0": {
+      "path": "Base.lproj\/LaunchScreen.storyboard",
+      "isa": "PBXFileReference",
+      "name": "Base",
+      "lastKnownFileType": "file.storyboard",
+      "sourceTree": "<group>"
+    },
+    "DACE56921C24A14D00E6ABB0": {
+      "path": "TestProject.app",
+      "isa": "PBXFileReference",
+      "includeInIndex": "0",
+      "explicitFileType": "wrapper.application",
+      "sourceTree": "BUILT_PRODUCTS_DIR"
+    },
+    "DACE56A51C24A14D00E6ABB0": {
+      "buildConfigurationList": "DACE56BD1C24A14D00E6ABB0",
+      "productReference": "DACE56A61C24A14D00E6ABB0",
+      "productType": "com.apple.product-type.bundle.unit-test",
+      "productName": "TestProjectTests",
+      "isa": "PBXNativeTarget",
+      "buildPhases": [
+        "DACE56A21C24A14D00E6ABB0",
+        "DACE56A31C24A14D00E6ABB0",
+        "DACE56A41C24A14D00E6ABB0"
+      ],
+      "dependencies": [
+        "DACE56A81C24A14D00E6ABB0"
+      ],
+      "name": "TestProjectTests",
+      "buildRules": []
+    },
+    "DACE56B51C24A14D00E6ABB0": {
+      "path": "TestProjectUITests.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    },
+    "DACE56991C24A14D00E6ABB0": {
+      "isa": "PBXVariantGroup",
+      "name": "Main.storyboard",
+      "children": [
+        "DACE569A1C24A14D00E6ABB0"
+      ],
+      "sourceTree": "<group>"
+    },
+    "DACE569C1C24A14D00E6ABB0": {
+      "path": "Assets.xcassets",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "folder.assetcatalog",
+      "sourceTree": "<group>"
+    },
+    "DACE56AF1C24A14D00E6ABB0": {
+      "isa": "PBXResourcesBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "DACE56A21C24A14D00E6ABB0": {
+      "isa": "PBXSourcesBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "DACE56AB1C24A14D00E6ABB0"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "DACE56BF1C24A14D00E6ABB0": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "INFOPLIST_FILE": "TestProjectTests\/Info.plist",
+        "BUNDLE_LOADER": "$(TEST_HOST)",
+        "TEST_HOST": "$(BUILT_PRODUCTS_DIR)\/TestProject.app\/TestProject",
+        "PRODUCT_BUNDLE_IDENTIFIER": "com.paul-samuels.TestProjectTests",
+        "LD_RUNPATH_SEARCH_PATHS": "$(inherited) @executable_path\/Frameworks @loader_path\/Frameworks",
+        "PRODUCT_NAME": "$(TARGET_NAME)"
+      },
+      "name": "Release"
+    },
+    "DACE56B21C24A14D00E6ABB0": {
+      "isa": "PBXContainerItemProxy",
+      "containerPortal": "DACE568A1C24A14C00E6ABB0",
+      "remoteGlobalIDString": "DACE56911C24A14D00E6ABB0",
+      "remoteInfo": "TestProject",
+      "proxyType": "1"
+    },
+    "DACE56C21C24A14D00E6ABB0": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "INFOPLIST_FILE": "TestProjectUITests\/Info.plist",
+        "TEST_TARGET_NAME": "TestProject",
+        "PRODUCT_BUNDLE_IDENTIFIER": "com.paul-samuels.TestProjectUITests",
+        "LD_RUNPATH_SEARCH_PATHS": "$(inherited) @executable_path\/Frameworks @loader_path\/Frameworks",
+        "USES_XCTRUNNER": "YES",
+        "PRODUCT_NAME": "$(TARGET_NAME)"
+      },
+      "name": "Release"
+    },
+    "DACE56961C24A14D00E6ABB0": {
+      "isa": "PBXBuildFile",
+      "fileRef": "DACE56951C24A14D00E6ABB0"
+    },
+    "DACE56A91C24A14D00E6ABB0": {
+      "path": "TestProjectTests",
+      "isa": "PBXGroup",
+      "children": [
+        "DACE56AA1C24A14D00E6ABB0",
+        "DACE56AC1C24A14D00E6ABB0"
+      ],
+      "sourceTree": "<group>"
+    }
+  },
+  "rootObject": "DACE568A1C24A14C00E6ABB0"
+}

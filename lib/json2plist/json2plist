@@ -1,0 +1,21 @@
+#!/usr/bin/env xcrun swift
+
+import Foundation
+
+guard Process.arguments.count == 3 else {
+  print("Usage: json2plist path/to/input path/to/output")
+  exit(EXIT_FAILURE)
+}
+
+guard let inputData = NSData(contentsOfURL: NSURL(fileURLWithPath: Process.arguments[1])) else {
+  print("Could not load \"\(Process.arguments[1])\"")
+  exit(EXIT_FAILURE)
+}
+
+do {
+  if let data = try NSJSONSerialization.JSONObjectWithData(inputData, options: .AllowFragments) as? NSDictionary {
+    data.writeToURL(NSURL(fileURLWithPath: Process.arguments[2]), atomically: true)
+  }
+} catch {
+  print(error)
+}
