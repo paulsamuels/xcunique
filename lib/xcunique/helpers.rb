@@ -1,6 +1,18 @@
 module Xcunique
   module Helpers
     
+    # Returns the object at a keypath in the project
+    #
+    # @param key_path [Array<String>] the key path to navigate
+    # @param root [Hash] the object to start the traversal from
+    # @parem objects [Hash] the project's objects
+    # @return [Object] the object retreived by traversing the key path
+    def self.object_at_key_path key_path, root, objects=root[Keys::OBJECTS]
+      Array(key_path).reduce(root) do |current, key|
+        objects[current[key]]
+      end
+    end
+    
     # Returns the `name` and `path` components of a node
     #
     # If the object contains a `fileRef` key then this is traversed to get

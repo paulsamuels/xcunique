@@ -19,7 +19,7 @@ module Xcunique
     # @return [Hash] a unqiued project object
     def uniquify
       root_uuid  = project[Keys::ROOT_OBJECT]
-      main_group = project[Keys::OBJECTS][root_uuid][Keys::MAIN_GROUP]
+      main_group = Xcunique::Helpers.object_at_key_path [ Keys::ROOT_OBJECT, Keys::MAIN_GROUP ], project
       
       parser = Parser.new(project)
       parser.parse object: main_group
