@@ -23,7 +23,7 @@ module Xcunique
       
       parser = Parser.new(project)
       parser.parse object: main_group
-      parser.parse object: root_uuid
+      parser.parse object: root_uuid, path_builder: Xcunique::Parser::VERBOSE_PATH_BUILDER
     
       project.deep_dup substitutions: Hash[parser.visited.map { |uuid, path| [ uuid, Digest::MD5.hexdigest(path) ] }]
     end

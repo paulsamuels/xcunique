@@ -9,6 +9,7 @@ module Xcunique
     OBJECTS      = 'objects'
     PATH         = 'path'
     PBXGroup     = 'PBXGroup'
+    PBXProject   = 'PBXProject'
     ROOT_OBJECT  = 'rootObject'
   end
 end

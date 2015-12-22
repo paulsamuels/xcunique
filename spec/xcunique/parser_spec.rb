@@ -19,17 +19,17 @@ describe Xcunique::Parser do
     expectations = {
       
       # ├── Project
-      "/PBXGroup" => 'DACE56891C24A14C00E6ABB0',
+      "PBXProject" => 'DACE56891C24A14C00E6ABB0',
       
       # ├── TestProject
       #    ├── Products
       #    ├── TestProject
       #    ├── TestProjectTests
       #    ├── TestProjectUITests
-      "/PBXGroup/PBXGroup(name: 'Products')"           => 'DACE56931C24A14D00E6ABB0',
-      "/PBXGroup/PBXGroup(path: 'TestProject')"        => 'DACE56941C24A14D00E6ABB0',
-      "/PBXGroup/PBXGroup(path: 'TestProjectTests')"   => 'DACE56A91C24A14D00E6ABB0',
-      "/PBXGroup/PBXGroup(path: 'TestProjectUITests')" => 'DACE56B41C24A14D00E6ABB0',
+      "Products"           => 'DACE56931C24A14D00E6ABB0',
+      "TestProject"        => 'DACE56941C24A14D00E6ABB0',
+      "TestProjectTests"   => 'DACE56A91C24A14D00E6ABB0',
+      "TestProjectUITests" => 'DACE56B41C24A14D00E6ABB0',
       
       # ├── TestProject
       # │   ├── AppDelegate.swift
@@ -39,35 +39,35 @@ describe Xcunique::Parser do
       # │   │   └── Main.storyboard
       # │   ├── Info.plist
       # │   └── ViewController.swift
-      "/PBXGroup/PBXGroup(path: 'TestProject')/PBXFileReference(path: 'AppDelegate.swift')"                                                                                 => 'DACE56951C24A14D00E6ABB0',
-      "/PBXGroup/PBXGroup(path: 'TestProject')/PBXFileReference(path: 'Assets.xcassets')"                                                                                   => 'DACE569C1C24A14D00E6ABB0',
-      "/PBXGroup/PBXGroup(path: 'TestProject')/PBXVariantGroup(name: 'LaunchScreen.storyboard')"                                                                            => 'DACE569E1C24A14D00E6ABB0',
-      "/PBXGroup/PBXGroup(path: 'TestProject')/PBXVariantGroup(name: 'LaunchScreen.storyboard')/PBXFileReference(name: 'Base', path: 'Base.lproj/LaunchScreen.storyboard')" => 'DACE569F1C24A14D00E6ABB0',
-      "/PBXGroup/PBXGroup(path: 'TestProject')/PBXVariantGroup(name: 'Main.storyboard')"                                                                                    => 'DACE56991C24A14D00E6ABB0',
-      "/PBXGroup/PBXGroup(path: 'TestProject')/PBXVariantGroup(name: 'Main.storyboard')/PBXFileReference(name: 'Base', path: 'Base.lproj/Main.storyboard')"                 => 'DACE569A1C24A14D00E6ABB0',
-      "/PBXGroup/PBXGroup(path: 'TestProject')/PBXFileReference(path: 'Info.plist')"                                                                                        => 'DACE56A11C24A14D00E6ABB0',
-      "/PBXGroup/PBXGroup(path: 'TestProject')/PBXFileReference(path: 'ViewController.swift')"                                                                              => 'DACE56971C24A14D00E6ABB0',
+      "TestProject/AppDelegate.swift"                                          => 'DACE56951C24A14D00E6ABB0',
+      "TestProject/Assets.xcassets"                                            => 'DACE569C1C24A14D00E6ABB0',
+      "TestProject/LaunchScreen.storyboard"                                    => 'DACE569E1C24A14D00E6ABB0',
+      "TestProject/LaunchScreen.storyboard/Base.lproj/LaunchScreen.storyboard" => 'DACE569F1C24A14D00E6ABB0',
+      "TestProject/Main.storyboard"                                            => 'DACE56991C24A14D00E6ABB0',
+      "TestProject/Main.storyboard/Base.lproj/Main.storyboard"                 => 'DACE569A1C24A14D00E6ABB0',
+      "TestProject/Info.plist"                                                 => 'DACE56A11C24A14D00E6ABB0',
+      "TestProject/ViewController.swift"                                       => 'DACE56971C24A14D00E6ABB0',
       
       # ├── TestProject
       #    ├── TestProjectTests
       #    │   ├── Info.plist
       #    │   └── TestProjectTests.swift
-      "/PBXGroup/PBXGroup(path: 'TestProjectTests')/PBXFileReference(path: 'Info.plist')"             => 'DACE56AC1C24A14D00E6ABB0',
-      "/PBXGroup/PBXGroup(path: 'TestProjectTests')/PBXFileReference(path: 'TestProjectTests.swift')" => 'DACE56AA1C24A14D00E6ABB0',
+      "TestProjectTests/Info.plist"             => 'DACE56AC1C24A14D00E6ABB0',
+      "TestProjectTests/TestProjectTests.swift" => 'DACE56AA1C24A14D00E6ABB0',
       
       # ├── TestProject
       #    └── TestProjectUITests
       #       ├── Info.plist
       #       └── TestProjectUITests.swift
-      "/PBXGroup/PBXGroup(path: 'TestProjectUITests')/PBXFileReference(path: 'Info.plist')"               => 'DACE56B71C24A14D00E6ABB0',
-      "/PBXGroup/PBXGroup(path: 'TestProjectUITests')/PBXFileReference(path: 'TestProjectUITests.swift')" => 'DACE56B51C24A14D00E6ABB0',
+      "TestProjectUITests/Info.plist"               => 'DACE56B71C24A14D00E6ABB0',
+      "TestProjectUITests/TestProjectUITests.swift" => 'DACE56B51C24A14D00E6ABB0',
       
       # ├── TestProject
       #    └── Products
       #       ├── TestProject.app
-      "/PBXGroup/PBXGroup(name: 'Products')/PBXFileReference(path: 'TestProject.app')"           => 'DACE56921C24A14D00E6ABB0',
-      "/PBXGroup/PBXGroup(name: 'Products')/PBXFileReference(path: 'TestProjectTests.xctest')"   => 'DACE56A61C24A14D00E6ABB0',
-      "/PBXGroup/PBXGroup(name: 'Products')/PBXFileReference(path: 'TestProjectUITests.xctest')" => 'DACE56B11C24A14D00E6ABB0',
+      "Products/TestProject.app"           => 'DACE56921C24A14D00E6ABB0',
+      "Products/TestProjectTests.xctest"   => 'DACE56A61C24A14D00E6ABB0',
+      "Products/TestProjectUITests.xctest" => 'DACE56B11C24A14D00E6ABB0',
     }
     
     expectations.each do |path, uuid|
@@ -83,7 +83,7 @@ describe Xcunique::Parser do
     @parser.parse(object: main_group)
     files_and_groups = @parser.visited.keys
     
-    @parser.parse(object: root_uuid)
+    @parser.parse(object: root_uuid, path_builder: Xcunique::Parser::VERBOSE_PATH_BUILDER)
     result = @parser.visited.reject { |key, _| files_and_groups.include?(key) }
     
     expectations = {
@@ -206,7 +206,7 @@ describe Xcunique::Parser do
     expectations.each do |path, uuid|
       assert_equal path, result[uuid]
     end
-    
+
     assert_equal [], result.keys - expectations.values
     
   end
