@@ -16,11 +16,24 @@ module Xcunique
     #   (path: 'Some Path')
     #   (name: 'Some Name', path: 'Some Path')
     def self.resolve_attributes uuid, objects
-      object = objects[objects[uuid][Keys::FILE_REF] || uuid]
-      
-      components = object.sort.select { |key, _| [ Keys::NAME, Keys::PATH ].include?(key) }.map { |key, value| "#{key}: '#{value}'" }.join(", ")
+      components = map_name_and_path(uuid, objects) { |key, value| "#{key}: '#{value}'" }.join(", ")
       components.length > 0 ? %Q{(#{components})} : ''
     end
     
+    # Returns the file/group name
+    # 
+    # Performs the same lookup as `resolve_attributes` but returns a simplified string
+    # that generally represents the actual folder/file name in the file explorer
+    def self.canonical_name uuid, objects
+      map_name_and_path(uuid, objects) { |_, value| value.split('/').last }.first || ''
+    end
+    
+    private
+    
+    def self.map_name_and_path uuid, objects, &block
+      object = objects[objects[uuid][Keys::FILE_REF] || uuid]
+      
+      object.sort.select { |key, _| [ Keys::NAME, Keys::PATH ].include?(key) }.map(&block)
+    end
   end
 end

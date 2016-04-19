@@ -44,7 +44,7 @@ module Xcunique
     # @!visibility public
     def comparator uuid
       prefix = objects[uuid][Keys::ISA] == Keys::PBXGroup ? '  ' : ''
-      prefix + Helpers.resolve_attributes(uuid, objects)
+      prefix + Helpers.canonical_name(uuid, objects) 
     end
     
   end
